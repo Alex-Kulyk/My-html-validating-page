@@ -1,16 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Forms</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Forms</title>
 </head>
+
 <body>
-    <nav>
-        <a href="index.html">Return to main page</a>
-    </nav>
+	<nav>
+		<a href="index.html">Return to main page</a>
+	</nav>
+	<form method="POST" action="https://formspree.io/alexkulyk87@gmail.com">
+		<h1>Вгадайте місто за фотографією</h1>
+		<img src="https://img.apester.com/insecure/fit/700/0/ce/0/plain/user-images%2F3b%2F3bcc3d775bae642cf6d884cbca11baa4.png" alt="#" >
+            <label>Київ
+                <input type="radio" name="city" value="Київ"checked >
+            </label>
+            <label>Санкт-Петербург
+                <input type="radio" name="city" value="Санкт-Петербург">
+            </label>
+            <button>Отправить</button>
+        <br>
+            <img src="https://img.apester.com/insecure/fit/700/0/ce/0/plain/user-images%2Ffd%2Ffd5e7efb35084232cbf5b73cd80ae74b.png" alt="#" >
+            <label>Прага
+                <input type="radio" name="city" value="Прага">
+             </label>
+            <label>Львів
+                <input type="radio" name="city" value="Львів">
+            </label>
+            <input type="submit">
+        <br>
+            <img src="https://img.apester.com/insecure/fit/700/0/ce/0/plain/user-images%2Ff5%2Ff584ceb763aaaaaf2d46eeff9005cc85.png" alt="#">
+            <label for="telAviv">Тель-Авів</label>
+                <input type="radio" id="telAviv" name="city" value="Тель-Авів">
+            <label for="Barselona">Барселона</label>
+                <input type="radio" id="Barselona" name="city" value="Барселона">
+            <input type="submit">
+        <br>
+    </form>
+        <hr>
+    <form method="POST" action="https://formspree.io/alexkulyk87@gmail.com">
+            <label for="name">Write your name:</label>
+                <input type="text" id="name" placeholder="Your name" name="Your Name">
+            <label>Write your email:
+                <input type="email" name="Email" placeholder="Email">
+            </label>
+            <input type="submit" value="submit">
+    </form>
+        <hr>
+    <form method="POST" action="https://formspree.io/alexkulyk87@gmail.com">
+            <label for="color"> Choose your colour: </label>
+            <input type="color" name="color" id="color">
+            <input type="submit">
+    </form>
+    <form method="POST" action="https://formspree.io/alexkulyk87@gmail.com">
+            <label for="range"> Move </label>
+            <input type="range" id="range" name="range" min="1" max="100" step="1">
+            <input type="submit">
+    </form>
+    <form method="POST" action="https://formspree.io/alexkulyk87@gmail.com">
+            <label for="time"> Time </label>
+            <input type="time" id="time" name="time">
+            <input type="submit">
+    </form>
 
 
 </body>
+
 </html>
